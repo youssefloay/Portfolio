@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import albinome from "@/public/albinome.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -35,53 +35,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Web Developer",
+    location: "Montpellier, France",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "  As a Web Developer Intern based in the picturesque city of Montpellier, France, I embarked on a dynamic and immersive two-month journey. During this time, I had the invaluable opportunity to work on real-world projects, collaborate with experienced professionals, and further refine my web development skills. My internship experience not only expanded my technical knowledge but also provided me with practical insights into the fast-paced world of web development.",
+      
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2020",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bachelor's Degree at ESGI",
+    location: "Lyon, France",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "During my time at École Supérieure de Génie Informatique (ESGI) in Lyon, France, I embarked on an enriching educational journey that spanned three transformative years. This period of academic exploration and personal growth culminated in the successful completion of my Bachelor's degree.",
+    icon: React.createElement(LuGraduationCap),
+   
+    date: "2019 - 2022",
+  },
+  
+  {
+    
+      title: "Freelance Developer",
+      location: "Montpellier, France",
+      description:
+        "As a Freelance Developer, I've been dedicated to providing innovative solutions and exceptional services. My focus lies in crafting responsive and mobile-adaptive web applications. I specialize in optimizing performance and have a keen eye for detail when it comes to design and prototyping, using tools like Figma to bring concepts to life. I thrive in delivering high-quality, tailored solutions to my clients, ensuring their digital presence is both seamless and efficient.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "Albinome",
+    description: "I worked as a full-stack developer on this Albinome food truck project. It's a platform for customers to easily order delicious pizza.",
+
+    tags: ["React", "Figma", "Tailwind","Firebase",],
+    imageUrl: albinome,
   },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+  
 ] as const;
 
 export const skillsData = [
@@ -94,14 +85,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "PHP",
+  "Figma",
+  "Firebase",
   "Framer Motion",
 ] as const;

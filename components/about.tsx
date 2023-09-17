@@ -19,31 +19,30 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+  After graduating from <span className="font-medium">ESGI</span>,
+  where I earned a degree in <span className="font-medium"> Ingénierie du Web </span>
+  with a specialization in web development, I embarked on a journey into the
+  world of web development. 
+  a passionate and creative web developer dedicated to crafting remarkable online experiences.
+</p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+<p>
+  With a strong foundation in both front-end and back-end development, I thrive on
+  turning ideas into functional and visually appealing websites and web applications.
+
+  I'm a firm believer in the power of clean code, elegant design, and seamless user
+  experiences. My academic background and practical experience have equipped me with
+  expertise in a range of technologies, including HTML, CSS, JavaScript, and modern
+  web frameworks like React and Next.js. 
+
+  What sets me apart is my commitment to continuous learning. In this ever-evolving
+  tech landscape, I stay up-to-date with the latest trends and best practices to deliver
+  cutting-edge solutions to my clients. I take pride in collaborating closely with clients
+  to understand their unique needs and translate their vision into reality.
+
+   
+</p>
+
     </motion.section>
   );
 }
