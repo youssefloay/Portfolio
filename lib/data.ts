@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import albinome from "@/public/albinome.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import wtw from "@/public/wtw.png";
 export const links = [
   {
     name: "Home",
@@ -72,6 +72,16 @@ export const projectsData = [
     tags: ["React", "Figma", "Tailwind","Firebase",],
     imageUrl: albinome,
   },
+
+  {
+    title: "Where to watch",
+    description: "Web app for searching movies and trailers, showing where to stream them. Aggregates data from various sources for easy film discovery.",
+
+    tags: ["React", "TypeScript", "Tailwind","Netlify",],
+    imageUrl: wtw,
+    githubUrl: "https://github.com/youssefloay/WhereToWatch",
+    websiteUrl: "https://iridescent-toffee-0dc7bd.netlify.app.",
+  },
   
 ] as const;
 
@@ -86,6 +96,7 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "PHP",
+  "Netlify",
   "Figma",
   "Firebase",
   "Framer Motion",
