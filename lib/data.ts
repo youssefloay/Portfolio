@@ -39,7 +39,7 @@ export const experiencesData = [
     title: "Web Developer",
     location: "Montpellier, France",
     description:
-      "As a Web Developer Intern based in the picturesque city of Montpellier, France, I embarked on a dynamic and immersive two-month journey. During this time, I had the invaluable opportunity to work on real-world projects, collaborate with experienced professionals, and further refine my web development skills. My internship experience not only expanded my technical knowledge but also provided me with practical insights into the fast-paced world of web development.",
+    "During my internship as a Web Developer in the city of Montpellier, France, I gained hands-on experience working on real-world projects. I collaborated with skilled professionals and honed my web development skills, deepening my technical expertise. This experience was a valuable opportunity to learn and grow while gaining practical insights into the dynamic field of web development.",
     icon: React.createElement(CgWorkAlt),
     date: "2020",
   },
@@ -47,8 +47,8 @@ export const experiencesData = [
     title: "Bachelor's Degree at ESGI",
     location: "Lyon, France",
     description:
-      "During my time at École Supérieure de Génie Informatique (ESGI) in Lyon, France, I embarked on an enriching educational journey that spanned three transformative years. This period of academic exploration and personal growth culminated in the successful completion of my Bachelor's degree.",
-    icon: React.createElement(LuGraduationCap),
+    "During my three years at École Supérieure de Génie Informatique (ESGI) in Lyon, France, I had the opportunity to grow both academically and personally. This enriching journey allowed me to explore my passion for technology and ultimately led to earning my Bachelor’s degree.",
+      icon: React.createElement(LuGraduationCap),
     date: "2019 - 2022",
   },
   {
@@ -78,7 +78,7 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Tailwind", "Netlify"],
     imageUrl: wtw,
     githubUrl: "https://github.com/youssefloay/WhereToWatch",
-    websiteUrl: "https://iridescent-toffee-0dc7bd.netlify.app",
+    websiteUrl: "https://wtwatch.netlify.app/",
   },
 ] as const;
 
@@ -97,4 +97,6 @@ export const skillsData = [
   "Figma",
   "Firebase",
   "Framer Motion",
+  "Docker",
+  "WordPress",
 ] as const;
