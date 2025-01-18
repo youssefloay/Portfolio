@@ -6,7 +6,7 @@ import albinome from "@/public/albinome.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import wtw from "@/public/wtw.png";
-
+import barati from "@/public/barati.jpeg";
 export const links = [
   {
     name: "Home",
@@ -80,6 +80,15 @@ export const projectsData = [
     githubUrl: "https://github.com/youssefloay/WhereToWatch",
     websiteUrl: "https://wtwatch.netlify.app/",
   },
+  {
+    title: "Barati Art",
+    description:
+      "Explore a unique collection of art and design. Barati Art showcases creativity and inspiration through diverse artistic expressions, offering an immersive visual experience.",
+    tags: ["WordPress", "WooCommerce", "Elementor", "Paymob API"],
+    imageUrl: barati, // Replace with the actual image variable or URL
+    websiteUrl: "https://www.baratiart.com/",
+},
+
 ] as const;
 
 export const skillsData = [
