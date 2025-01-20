@@ -108,4 +108,5 @@ export const skillsData = [
   "Framer Motion",
   "Docker",
   "WordPress",
+  "Woocommerce",
 ] as const;
