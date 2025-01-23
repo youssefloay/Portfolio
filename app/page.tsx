@@ -8,6 +8,7 @@ import Skills from "@/components/skills";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function Home() {
   return (
+    
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
@@ -16,6 +17,8 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
+      <SpeedInsights />
     </main>
+    
   );
 }
