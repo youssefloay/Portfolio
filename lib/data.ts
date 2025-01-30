@@ -9,7 +9,7 @@ import wtw from "@/public/wtw.png";
 import barati from "@/public/barati.jpeg";
 
 // Helper function to select icons based on the description
-const getIconForExperience = (description) => {
+const getIconForExperience = (description: string) => {
   if (description.includes("React") || description.includes("Next.js") || description.includes("TypeScript")) {
     return React.createElement(FaReact);
   } else if (description.includes("WordPress") || description.includes("Elementor")) {
