@@ -39,27 +39,52 @@ export const experiencesData = [
     title: "Web Developer",
     location: "Montpellier, France",
     description:
-    "During my internship as a Web Developer in the city of Montpellier, France, I gained hands-on experience working on real-world projects. I collaborated with skilled professionals and honed my web development skills, deepening my technical expertise. This experience was a valuable opportunity to learn and grow while gaining practical insights into the dynamic field of web development.",
+      "Worked on both front-end and back-end development, creating fast and user-friendly websites. Used technologies like React, Next.js, PHP, and WordPress to build efficient and visually appealing web applications.",
     icon: React.createElement(CgWorkAlt),
-    date: "2020",
+    date: "2020 - Present",
   },
   {
-    title: "Bachelor's Degree at ESGI",
-    location: "Lyon, France",
-    description:
-    "During my three years at École Supérieure de Génie Informatique (ESGI) in Lyon, France, I had the opportunity to grow both academically and personally. This enriching journey allowed me to explore my passion for technology and ultimately led to earning my Bachelor’s degree.",
-      icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2022",
-  },
-  {
-    title: "Freelance Developer",
+    title: "Web Developer at Baratiart",
     location: "Montpellier, France",
     description:
-      "As a Freelance Developer, I've been dedicated to providing innovative solutions and exceptional services. My focus lies in crafting responsive and mobile-adaptive web applications. I specialize in optimizing performance and have a keen eye for detail when it comes to design and prototyping, using tools like Figma to bring concepts to life. I thrive in delivering high-quality, tailored solutions to my clients, ensuring their digital presence is both seamless and efficient.",
+      "Developed an e-commerce website using WordPress and Elementor, integrating secure payment systems like Paymob and PayPal. Focused on performance optimization and enhancing user experience.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "Apr 2024 - Jan 2025",
+  },
+  {
+    title: "Web Developer at Serenity IPTV",
+    location: "Montpellier, France",
+    description:
+      "Designed and developed a modern landing page for an IPTV subscription service. Created UX/UI prototypes with Figma and built a responsive front-end using React and TypeScript.",
+    icon: React.createElement(FaReact),
+    date: "Sep 2023 - Jan 2024",
+  },
+  {
+    title: "Web Developer at Albinome",
+    location: "Montpellier, France",
+    description:
+      "Built a restaurant website with an interactive menu and real-time reservation system. Developed the front-end using ReactJS and collaborated with back-end teams for smooth API integration.",
+    icon: React.createElement(FaReact),
+    date: "Mar 2023 - Sep 2023",
+  },
+  {
+    title: "Web Developer Intern at NewSmartEgypt",
+    location: "Montpellier, France",
+    description:
+      "Gained experience in developing responsive websites using HTML, PHP, and SQL. Optimized database performance and worked closely with clients to ensure a smooth user experience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2021 - Dec 2021",
+  },
+  {
+    title: "Web Developer Apprentice at AlphaOmegaGreen",
+    location: "Montpellier, France",
+    description:
+      "Developed and maintained web applications using WordPress. Created custom plugins and optimized MySQL queries for better performance.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sep 2020 - Sep 2021",
   },
 ] as const;
+
 
 export const projectsData = [
   {

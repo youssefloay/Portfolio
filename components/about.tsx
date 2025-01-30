@@ -17,30 +17,18 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-  After graduating from <span className="font-medium">ESGI</span>,
-  where I earned a degree in <span className="font-medium"> Ingénierie du Web </span>
-  with a specialization in web development, I embarked on a journey into the
-  world of web development. 
-  a passionate and creative web developer dedicated to crafting remarkable online experiences.
+     <SectionHeading>About me</SectionHeading>
+<p className="mb-3">
+  I graduated from <span className="font-medium">ESGI</span> with a degree in
+  <span className="font-medium"> Ingénierie du Web </span> and have been building websites ever since.
 </p>
 
 <p>
-  With a strong foundation in both front-end and back-end development, I thrive on
-  turning ideas into functional and visually appealing websites and web applications.
+  I work on both front-end and back-end, using HTML, CSS, JavaScript, React, and Next.js to create 
+  fast and user-friendly sites. 
 
-  I'm a firm believer in the power of clean code, elegant design, and seamless user
-  experiences. My academic background and practical experience have equipped me with
-  expertise in a range of technologies, including HTML, CSS, JavaScript, and modern
-  web frameworks like React and Next.js. 
-
-  What sets me apart is my commitment to continuous learning. In this ever-evolving
-  tech landscape, I stay up-to-date with the latest trends and best practices to deliver
-  cutting-edge solutions to my clients. I take pride in collaborating closely with clients
-  to understand their unique needs and translate their vision into reality.
-
-   
+  I keep learning new technologies to improve my skills and always focus on making websites that 
+  look good and work well. I also enjoy working with clients to bring their ideas to life.
 </p>
 
     </motion.section>
