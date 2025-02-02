@@ -52,54 +52,39 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Developer",
-    location: "Montpellier, France",
+    title: "Full Stack Web Developer",
+    location: "France",
     description:
-      "Worked on both front-end and back-end development, creating fast and user-friendly websites. Used technologies like React, Next.js, PHP, and WordPress to build efficient and visually appealing web applications.",
-    icon: getIconForExperience("Worked on both front-end and back-end development, creating fast and user-friendly websites. Used technologies like React, Next.js, PHP, and WordPress to build efficient and visually appealing web applications."),
-    date: "2020 - Present",
+      "Developed and maintained e-commerce and showcase websites using ReactJS, TypeScript, Next.js, and WordPress. Integrated payment APIs, optimized website performance, and designed accessible UX/UI interfaces for a seamless user experience.",
+    icon: getIconForExperience("Developed and maintained e-commerce and showcase websites using ReactJS, TypeScript, Next.js, and WordPress. Integrated payment APIs, optimized website performance, and designed accessible UX/UI interfaces for a seamless user experience."),
+    date: "Feb 2024 - Present",
   },
   {
-    title: "Web Developer at Baratiart",
+    title: "Regional Marketing & Operations Manager at Oppizi",
     location: "Montpellier, France",
     description:
-      "Developed an e-commerce website using WordPress and Elementor, integrating secure payment systems like Paymob and PayPal. Focused on performance optimization and enhancing user experience.",
-    icon: getIconForExperience("Developed an e-commerce website using WordPress and Elementor, integrating secure payment systems like Paymob and PayPal. Focused on performance optimization and enhancing user experience."),
-    date: "Apr 2024 - Jan 2025",
+      "Analyzed market trends and business needs to develop strategic marketing campaigns. Led large-scale initiatives across multiple cities, improving team management and HR strategies. Optimized conversion rates through data-driven decision-making.",
+    icon: getIconForExperience("Analyzed market trends and business needs to develop strategic marketing campaigns. Led large-scale initiatives across multiple cities, improving team management and HR strategies. Optimized conversion rates through data-driven decision-making."),
+    date: "Jan 2022 - Jan 2024",
   },
   {
-    title: "Web Developer at Serenity IPTV",
-    location: "Montpellier, France",
+    title: "Web Developer & SEO Manager",
+    location: "France",
     description:
-      "Designed and developed a modern landing page for an IPTV subscription service. Created UX/UI prototypes with Figma and built a responsive front-end using React and TypeScript.",
-    icon: getIconForExperience("Designed and developed a modern landing page for an IPTV subscription service. Created UX/UI prototypes with Figma and built a responsive front-end using React and TypeScript."),
-    date: "Sep 2023 - Jan 2024",
-  },
-  {
-    title: "Web Developer at Albinome",
-    location: "Montpellier, France",
-    description:
-      "Built a restaurant website with an interactive menu and real-time reservation system. Developed the front-end using ReactJS and collaborated with back-end teams for smooth API integration.",
-    icon: getIconForExperience("Built a restaurant website with an interactive menu and real-time reservation system. Developed the front-end using ReactJS and collaborated with back-end teams for smooth API integration."),
-    date: "Mar 2023 - Sep 2023",
-  },
-  {
-    title: "Web Developer Intern at NewSmartEgypt",
-    location: "Montpellier, France",
-    description:
-      "Gained experience in developing responsive websites using HTML, PHP, and SQL. Optimized database performance and worked closely with clients to ensure a smooth user experience.",
-    icon: getIconForExperience("Gained experience in developing responsive websites using HTML, PHP, and SQL. Optimized database performance and worked closely with clients to ensure a smooth user experience."),
-    date: "Sep 2021 - Dec 2021",
+      "Configured and customized WordPress sites, integrating custom plugins and MailChimp for newsletter management. Implemented SEO strategies using Google Search Console and Google Analytics to enhance website visibility and performance.",
+    icon: getIconForExperience("Configured and customized WordPress sites, integrating custom plugins and MailChimp for newsletter management. Implemented SEO strategies using Google Search Console and Google Analytics to enhance website visibility and performance."),
+    date: "Sep 2021 - Jan 2022",
   },
   {
     title: "Web Developer Apprentice at AlphaOmegaGreen",
     location: "Montpellier, France",
     description:
-      "Developed and maintained web applications using WordPress. Created custom plugins and optimized MySQL queries for better performance.",
-    icon: getIconForExperience("Developed and maintained web applications using WordPress. Created custom plugins and optimized MySQL queries for better performance."),
+      "Developed and maintained web applications using WordPress. Created custom plugins, optimized MySQL queries, and ensured website responsiveness for a smooth user experience.",
+    icon: getIconForExperience("Developed and maintained web applications using WordPress. Created custom plugins, optimized MySQL queries, and ensured website responsiveness for a smooth user experience."),
     date: "Sep 2020 - Sep 2021",
   },
 ] as const;
+
 
 export const projectsData = [
   {
