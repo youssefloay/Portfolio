@@ -97,6 +97,15 @@ export const projectsData = [
     websiteUrl: "", // Optional property
   },
   {
+    title: "ImageAI SAAS",
+    description:
+      "Full-stack AI SaaS platform with Next.js, integrating OpenAI APIs, Stripe subscriptions, and Clerk/NextAuth authentication",
+    tags: ["Next.js", "Stripe", "PostgreSQL","MongoDB", "Clerk", "OpenAI API", "Tailwind CSS"],
+    imageUrl: "",
+    githubUrl: "", // Optional property
+    websiteUrl: "", // Optional property
+  },
+  {
     title: "Where to watch",
     description:
       "Web app for searching movies and trailers, showing where to stream them. Aggregates data from various sources for easy film discovery.",
