@@ -67,16 +67,9 @@ export const experiencesData = [
     icon: getIconForExperience("Analyzed market trends and business needs to develop strategic marketing campaigns. Led large-scale initiatives across multiple cities, improving team management and HR strategies. Optimized conversion rates through data-driven decision-making."),
     date: "Jan 2022 - Jan 2024",
   },
+  
   {
-    title: "Web Developer & SEO Manager",
-    location: "France",
-    description:
-      "Configured and customized WordPress sites, integrating custom plugins and MailChimp for newsletter management. Implemented SEO strategies using Google Search Console and Google Analytics to enhance website visibility and performance.",
-    icon: getIconForExperience("Configured and customized WordPress sites, integrating custom plugins and MailChimp for newsletter management. Implemented SEO strategies using Google Search Console and Google Analytics to enhance website visibility and performance."),
-    date: "Sep 2021 - Jan 2022",
-  },
-  {
-    title: "Web Developer Apprentice at AlphaOmegaGreen",
+    title: "Web Developer & SEO Manager at AlphaOmegaGreen",
     location: "Montpellier, France",
     description:
       "Developed and maintained web applications using WordPress. Created custom plugins, optimized MySQL queries, and ensured website responsiveness for a smooth user experience.",
