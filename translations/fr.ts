@@ -20,9 +20,9 @@ export const fr = {
     title: "Mes Projets",
     description: "Voici quelques-uns de mes projets récents :",
     viewProject: "Voir le projet.",
-    sourceCode: "Code source.",
-    liveDemo: "Site Web.",
-    viewCode: "Voir le code.",
+    sourceCode: "Code source",
+    liveDemo: "Site Web",
+    viewCode: "Voir le code",
   },
   skills: {
     title: "Mes Compétences",

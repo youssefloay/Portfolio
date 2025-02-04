@@ -19,10 +19,10 @@ export const en = {
   projects: {
     title: "My Projects",
     description: "Here are some of my recent projects:",
-    viewProject: "View Project.",
-    sourceCode: "Source Code.",
-    liveDemo: "Website.",
-    viewCode: "View Code.",
+    viewProject: "View Project",
+    sourceCode: "Source Code",
+    liveDemo: "Website",
+    viewCode: "View Code",
   },
   skills: {
     title: "My Skills",
