@@ -6,6 +6,9 @@ import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import ThemeSwitch from "@/components/theme-switch";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 export default function Home() {
   return (
     
@@ -18,6 +21,8 @@ export default function Home() {
       <Experience />
       <Contact />
       <SpeedInsights />
+      <ThemeSwitch />
+      <LanguageSwitcher />
     </main>
     
   );

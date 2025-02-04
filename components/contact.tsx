@@ -7,9 +7,11 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useLanguage } from "@/context/language-context";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const { translations } = useLanguage();
 
   return (
     <motion.section
@@ -29,14 +31,10 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>{translations.contact.title}</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:youssefloay@gmail.com">
-          youssefloay@gmail.com
-        </a>{" "}
-        or through this form.
+        {translations.contact.description}
       </p>
 
       <form
@@ -45,11 +43,11 @@ export default function Contact() {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
-            toast.error(error);
+            toast.error(translations.contact.emailError);
             return;
           }
 
-          toast.success("Email sent successfully!");
+          toast.success(translations.contact.emailSuccess);
         }}
       >
         <input
@@ -58,16 +56,21 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="Email"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder={translations.contact.emailPlaceholder}
           required
           maxLength={5000}
         />
-        <SubmitBtn />
+        <button
+          type="submit" 
+          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10"
+        >
+          {translations.contact.submitButton}
+        </button>
       </form>
     </motion.section>
   );

@@ -9,7 +9,13 @@ const nextConfig = {
     ],
   },
   experimental: {
-    serverActions:true,
+    serverActions: {
+      allowedOrigins: ["*"],
+    },
+  },
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
   },
 };
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -9,10 +9,52 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useLanguage } from "@/context/language-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { translations, language } = useLanguage();
+  const [isCVDropdownOpen, setIsCVDropdownOpen] = useState(false);
+  const [isPortfolioDropdownOpen, setIsPortfolioDropdownOpen] = useState(false);
+  const cvDropdownRef = useRef<HTMLDivElement>(null);
+  const portfolioDropdownRef = useRef<HTMLDivElement>(null);
+
+  const cvFiles = [
+    {
+      name: "CV English",
+      path: "/Youssef Loay CV EN.pdf"
+    },
+    {
+      name: "CV Français",
+      path: "/Youssef Loay CV FR.pdf"
+    }
+  ];
+
+  const portfolioFiles = [
+    {
+      name: "Portfolio English",
+      path: "/Youssef Loay Portfolio.docx"
+    },
+    {
+      name: "Portfolio Français",
+      path: "/Youssef Loay Portfolio.docx"
+    }
+  ];
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (cvDropdownRef.current && !cvDropdownRef.current.contains(event.target as Node)) {
+        setIsCVDropdownOpen(false);
+      }
+      if (portfolioDropdownRef.current && !portfolioDropdownRef.current.contains(event.target as Node)) {
+        setIsPortfolioDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <section
@@ -62,18 +104,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Youssef.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> who loves building{" "}
-        <span className="italic">websites and applications</span>.
+        {translations.intro.greeting}. {translations.intro.role} {translations.intro.description}
       </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
@@ -83,30 +121,67 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          {translations.intro.contactButton}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Youssef Loay CV 25.pdf"
-          download
-        >
-          Portfolio{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Youssef Loay portfolio.docx"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
+        <div className="relative" ref={cvDropdownRef}>
+          <button
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            onClick={() => setIsCVDropdownOpen(!isCVDropdownOpen)}
+          >
+            {translations.intro.downloadCV}{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </button>
+
+          {isCVDropdownOpen && (
+            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
+              {cvFiles.map((file, index) => (
+                <a
+                  key={index}
+                  href={file.path}
+                  download
+                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                  onClick={() => setIsCVDropdownOpen(false)}
+                >
+                  {file.name}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="relative" ref={portfolioDropdownRef}>
+          <button
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            onClick={() => setIsPortfolioDropdownOpen(!isPortfolioDropdownOpen)}
+          >
+            {translations.intro.portfolio}{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          </button>
+
+          {isPortfolioDropdownOpen && (
+            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
+              {portfolioFiles.map((file, index) => (
+                <a
+                  key={index}
+                  href={file.path}
+                  download
+                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                  onClick={() => setIsPortfolioDropdownOpen(false)}
+                >
+                  {file.name}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/youssefloay/"
           target="_blank"
+          aria-label={translations.intro.viewLinkedIn}
         >
           <BsLinkedin />
         </a>
@@ -115,6 +190,7 @@ export default function Intro() {
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/youssefloay"
           target="_blank"
+          aria-label={translations.intro.viewGitHub}
         >
           <FaGithubSquare />
         </a>
