@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useCallback } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -11,7 +11,7 @@ export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const { translations } = useLanguage();
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     
@@ -33,7 +33,7 @@ export default function Contact() {
     } catch (error) {
       toast.error(translations.contact.emailError);
     }
-  };
+  }, [translations.contact.emailSuccess, translations.contact.emailError]);
 
   return (
     <motion.section
@@ -44,6 +44,7 @@ export default function Contact() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
+      layout
     >
       <SectionHeading>{translations.contact.title}</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
@@ -61,6 +62,7 @@ export default function Contact() {
           required
           maxLength={500}
           placeholder="Email"
+          autoComplete="email"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -68,6 +70,7 @@ export default function Contact() {
           placeholder={translations.contact.emailPlaceholder}
           required
           maxLength={5000}
+          autoComplete="off"
         />
         <button
           type="submit"
