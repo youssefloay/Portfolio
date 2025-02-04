@@ -21,7 +21,7 @@ export const en = {
     description: "Here are some of my recent projects:",
     viewProject: "View Project",
     sourceCode: "Source Code",
-    liveDemo: "Live Demo",
+    liveDemo: "Website",
     viewCode: "View Code",
   },
   skills: {

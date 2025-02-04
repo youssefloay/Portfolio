@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <SectionHeading>{translations.projects.title}</SectionHeading>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {currentProjects.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

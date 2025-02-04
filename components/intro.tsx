@@ -109,7 +109,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
@@ -126,56 +126,58 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
-        <div className="relative" ref={cvDropdownRef}>
-          <button
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            onClick={() => setIsCVDropdownOpen(!isCVDropdownOpen)}
-          >
-            {translations.intro.downloadCV}{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </button>
+        <div className="flex items-center gap-4">
+          <div className="relative" ref={cvDropdownRef}>
+            <button
+              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              onClick={() => setIsCVDropdownOpen(!isCVDropdownOpen)}
+            >
+              {translations.intro.downloadCV}{" "}
+              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            </button>
 
-          {isCVDropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
-              {cvFiles.map((file, index) => (
-                <a
-                  key={index}
-                  href={file.path}
-                  download
-                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-                  onClick={() => setIsCVDropdownOpen(false)}
-                >
-                  {file.name}
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
+            {isCVDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
+                {cvFiles.map((file, index) => (
+                  <a
+                    key={index}
+                    href={file.path}
+                    download
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                    onClick={() => setIsCVDropdownOpen(false)}
+                  >
+                    {file.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
 
-        <div className="relative" ref={portfolioDropdownRef}>
-          <button
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            onClick={() => setIsPortfolioDropdownOpen(!isPortfolioDropdownOpen)}
-          >
-            {translations.intro.portfolio}{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </button>
+          <div className="relative" ref={portfolioDropdownRef}>
+            <button
+              className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+              onClick={() => setIsPortfolioDropdownOpen(!isPortfolioDropdownOpen)}
+            >
+              {translations.intro.portfolio}{" "}
+              <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            </button>
 
-          {isPortfolioDropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
-              {portfolioFiles.map((file, index) => (
-                <a
-                  key={index}
-                  href={file.path}
-                  download
-                  className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
-                  onClick={() => setIsPortfolioDropdownOpen(false)}
-                >
-                  {file.name}
-                </a>
-              ))}
-            </div>
-          )}
+            {isPortfolioDropdownOpen && (
+              <div className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 py-1 z-10">
+                {portfolioFiles.map((file, index) => (
+                  <a
+                    key={index}
+                    href={file.path}
+                    download
+                    className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                    onClick={() => setIsPortfolioDropdownOpen(false)}
+                  >
+                    {file.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         <a
