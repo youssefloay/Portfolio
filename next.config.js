@@ -7,16 +7,14 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    unoptimized: true,
   },
   experimental: {
     serverActions: {
       allowedOrigins: ["*"],
     },
   },
-  i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en',
-  },
+  output: 'export',
 };
 
 module.exports = nextConfig;

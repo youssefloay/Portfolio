@@ -13,8 +13,8 @@ import { headerData } from "@/lib/data";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: headerData.en.title,
-  description: headerData.en.description,
+  title: "Youssef Loay | Full-Stack Developer",
+  description: "Youssef is a full-stack developer with experience in React, Next.js, and more.",
 };
 
 export default function RootLayout({
@@ -30,8 +30,8 @@ export default function RootLayout({
   return (
     <html lang={lang} className="!scroll-smooth">
       <head>
-        <title>{header.title}</title>
-        <meta name="description" content={header.description} />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
       </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
