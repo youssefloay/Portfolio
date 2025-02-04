@@ -8,7 +8,6 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { LanguageContextProvider } from "@/context/language-context";
-import { headerData } from "@/lib/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +18,11 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
 }) {
-  const lang = params.lang || 'en';
-  const header = headerData[lang as keyof typeof headerData];
-
   return (
-    <html lang={lang} className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />

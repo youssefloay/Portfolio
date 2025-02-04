@@ -9,7 +9,7 @@ import wtw from "@/public/wtw.png";
 import barati from "@/public/barati.jpeg";
 import { en } from "@/translations/en";
 import { fr } from "@/translations/fr";
-
+import AIART from "@/public/AIART .jpg";
 // Helper function to select icons based on the description
 export const getIconForExperience = (description: string) => {
   if (description.includes("React") || description.includes("Next.js") || description.includes("TypeScript")) {
@@ -137,7 +137,7 @@ export const projectsData = {
       title: "ImageAI SAAS",
       description: "Full-stack AI SaaS platform with Next.js, integrating OpenAI APIs, Stripe subscriptions, and Clerk/NextAuth authentication",
       tags: ["Next.js", "Stripe", "PostgreSQL", "MongoDB", "Clerk", "OpenAI API", "Tailwind CSS"],
-      imageUrl: albinome,
+      imageUrl: AIART,
       githubUrl: "",
       websiteUrl: "",
     },
@@ -170,7 +170,7 @@ export const projectsData = {
       title: "ImageAI SAAS",
       description: "Plateforme SaaS d'IA full-stack avec Next.js, intégrant les APIs OpenAI, les abonnements Stripe et l'authentification Clerk/NextAuth",
       tags: ["Next.js", "Stripe", "PostgreSQL", "MongoDB", "Clerk", "OpenAI API", "Tailwind CSS"],
-      imageUrl: albinome,
+      imageUrl: AIART,
       githubUrl: "",
       websiteUrl: "",
     },
