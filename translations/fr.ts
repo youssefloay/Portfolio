@@ -2,7 +2,7 @@ export const fr = {
   intro: {
     greeting: "Bonjour, je suis Youssef",
     role: "Je suis développeur full-stack",
-    description: "passionné par la création de sites web et d'applications",
+    description: "passionné par la création de sites web et d'applications.",
     contactMe: "Me contacter",
     downloadCV: "Télécharger CV",
     portfolio: "Portfolio",
@@ -19,10 +19,10 @@ export const fr = {
   projects: {
     title: "Mes Projets",
     description: "Voici quelques-uns de mes projets récents :",
-    viewProject: "Voir le projet",
-    sourceCode: "Code source",
-    liveDemo: "Site Web",
-    viewCode: "Voir le code",
+    viewProject: "Voir le projet.",
+    sourceCode: "Code source.",
+    liveDemo: "Site Web.",
+    viewCode: "Voir le code.",
   },
   skills: {
     title: "Mes Compétences",

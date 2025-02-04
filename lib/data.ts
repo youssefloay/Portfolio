@@ -127,7 +127,7 @@ export const projectsData = {
   en: [
     {
       title: "Albinome",
-      description: "I worked as a full-stack developer on this Albinome food truck project. It's a platform for customers to easily order delicious pizza.",
+      description: "Built with React, Firebase for real-time database, and Tailwind CSS for styling. Implemented responsive design using Figma mockups and integrated secure payment processing.",
       tags: ["React", "Figma", "Tailwind", "Firebase"],
       imageUrl: albinome,
       githubUrl: "",
@@ -135,7 +135,7 @@ export const projectsData = {
     },
     {
       title: "ImageAI SAAS",
-      description: "Full-stack AI SaaS platform with Next.js, integrating OpenAI APIs, Stripe subscriptions, and Clerk/NextAuth authentication",
+      description: "Developed using Next.js with TypeScript, integrated OpenAI APIs for image generation. Implemented Stripe for subscription management and Clerk for authentication. Used MongoDB and PostgreSQL for data storage.",
       tags: ["Next.js", "Stripe", "PostgreSQL", "MongoDB", "Clerk", "OpenAI API", "Tailwind CSS"],
       imageUrl: AIART,
       githubUrl: "",
@@ -143,7 +143,7 @@ export const projectsData = {
     },
     {
       title: "Where to watch",
-      description: "Web app for searching movies and trailers, showing where to stream them. Aggregates data from various sources for easy film discovery.",
+      description: "Built with React and TypeScript, utilizing external APIs for movie data. Implemented responsive design with Tailwind CSS and deployed on Netlify with CI/CD pipeline.",
       tags: ["React", "TypeScript", "Tailwind", "Netlify"],
       imageUrl: wtw,
       githubUrl: "https://github.com/youssefloay/WhereToWatch",
@@ -151,7 +151,7 @@ export const projectsData = {
     },
     {
       title: "Barati Art",
-      description: "Explore a unique collection of art and design. Barati Art showcases creativity and inspiration through diverse artistic expressions, offering an immersive visual experience.",
+      description: "Developed with WordPress and WooCommerce for e-commerce functionality. Customized using Elementor for design and integrated Paymob API for secure payment processing.",
       tags: ["WordPress", "WooCommerce", "Elementor", "Paymob API"],
       imageUrl: barati,
       websiteUrl: "https://www.baratiart.com/",
@@ -160,7 +160,7 @@ export const projectsData = {
   fr: [
     {
       title: "Albinome",
-      description: "J'ai travaillé en tant que développeur full-stack sur ce projet de food truck Albinome. C'est une plateforme permettant aux clients de commander facilement de délicieuses pizzas.",
+      description: "Développé avec React, Firebase pour la base de données en temps réel, et Tailwind CSS pour le style. Design responsive implémenté avec des maquettes Figma et intégration de paiement sécurisé.",
       tags: ["React", "Figma", "Tailwind", "Firebase"],
       imageUrl: albinome,
       githubUrl: "",
@@ -168,7 +168,7 @@ export const projectsData = {
     },
     {
       title: "ImageAI SAAS",
-      description: "Plateforme SaaS d'IA full-stack avec Next.js, intégrant les APIs OpenAI, les abonnements Stripe et l'authentification Clerk/NextAuth",
+      description: "Développé avec Next.js et TypeScript, intégration des APIs OpenAI pour la génération d'images. Implémentation de Stripe pour la gestion des abonnements et Clerk pour l'authentification. Utilisation de MongoDB et PostgreSQL pour le stockage des données.",
       tags: ["Next.js", "Stripe", "PostgreSQL", "MongoDB", "Clerk", "OpenAI API", "Tailwind CSS"],
       imageUrl: AIART,
       githubUrl: "",
@@ -176,7 +176,7 @@ export const projectsData = {
     },
     {
       title: "Where to watch",
-      description: "Application web pour rechercher des films et bandes-annonces, montrant où les regarder en streaming. Agrège des données de diverses sources pour une découverte facile des films.",
+      description: "Construit avec React et TypeScript, utilisant des APIs externes pour les données de films. Design responsive implémenté avec Tailwind CSS et déployé sur Netlify avec pipeline CI/CD.",
       tags: ["React", "TypeScript", "Tailwind", "Netlify"],
       imageUrl: wtw,
       githubUrl: "https://github.com/youssefloay/WhereToWatch",
@@ -184,7 +184,7 @@ export const projectsData = {
     },
     {
       title: "Barati Art",
-      description: "Explorez une collection unique d'art et de design. Barati Art met en valeur la créativité et l'inspiration à travers diverses expressions artistiques, offrant une expérience visuelle immersive.",
+      description: "Développé avec WordPress et WooCommerce pour les fonctionnalités e-commerce. Personnalisé avec Elementor pour le design et intégration de l'API Paymob pour le traitement sécurisé des paiements.",
       tags: ["WordPress", "WooCommerce", "Elementor", "Paymob API"],
       imageUrl: barati,
       websiteUrl: "https://www.baratiart.com/",
