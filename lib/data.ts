@@ -213,7 +213,8 @@ export const skillsData = [
   "Clerk",
   "MongoDB",
   "Scrum",
-  "Waterfall"
+  "Waterfall",
+  "Vercel",
 
 ] as const;
 
