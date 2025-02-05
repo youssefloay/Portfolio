@@ -210,6 +210,11 @@ export const skillsData = [
   "Docker",
   "WordPress",
   "Woocommerce",
+  "Clerk",
+  "MongoDB",
+  "Scrum",
+  "Waterfall"
+
 ] as const;
 
 export const headerData = {
