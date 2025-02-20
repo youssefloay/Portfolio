@@ -4,7 +4,7 @@ export const en = {
     role: "I'm a full-stack developer",
     description: "who loves building websites and applications.",
     contactMe: "Contact me",
-    downloadCV: "Download CV",
+    downloadCV: "CV",
     portfolio: "Portfolio",
     downloadPortfolio: "Portfolio",
     downloadCVButton: "Download CV",
